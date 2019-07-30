@@ -88,9 +88,9 @@
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
     translation: {
-      copy_button: 'Copiar',
-      copy_success: 'Copiado',
-      copy_failure: 'Copiar falló'
+      copy_button: 'Kopieren',
+      copy_success: 'Kopiert',
+      copy_failure: 'Kopieren fehlgeschlagen'
     }
   };
 </script>
@@ -108,7 +108,7 @@
 <meta property="og:image" content="http://wawawaaw.top/2019/07/22/my-first-hexo-blog/2019-07-29-14-29-42.png">
 <meta property="og:image" content="http://wawawaaw.top/2019/07/22/my-first-hexo-blog/2019-07-26-17-11-47.png">
 <meta property="og:image" content="http://wawawaaw.top/2019/07/22/my-first-hexo-blog/2019-07-29-14-05-33.png">
-<meta property="og:updated_time" content="2019-07-30T01:45:16.451Z">
+<meta property="og:updated_time" content="2019-07-30T06:24:25.219Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第一篇博客，记录一下vscode+hexo的一些配置（坑）">
 <meta name="twitter:description" content="第一篇博客，记录一下vscode+hexo的一些配置（坑）准备工作1.安装git、node.js2.在Github新建一个仓库，格式：账户名.github.io命名，在仓库的Settings里面GitHub Pages这一栏可以看到访问网址，可以点击下试着访问   3.如果自己有域名的话可以绑定一下，ping一下上面那个网址的ip地址，可以用A记录解析，指向ip地址，也可以用CNAME指向的是 账">
@@ -199,7 +199,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Cambiar a barra de navegación">
+    <button aria-label="Navigationsleiste an/ausschalten">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -226,7 +226,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Inicio</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Startseite</a>
 
   </li>
         
@@ -242,7 +242,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archivo</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archiv</a>
 
   </li>
 
@@ -326,14 +326,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Publicado el</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
 
               
                 
               
 
-              <time title="Creado por: 2019-07-22 17:04:19" itemprop="dateCreated datePublished" datetime="2019-07-22T17:04:19+08:00">2019-07-22</time>
+              <time title="Erstellt: 2019-07-22 17:04:19" itemprop="dateCreated datePublished" datetime="2019-07-22T17:04:19+08:00">2019-07-22</time>
             </span>
           
 
@@ -346,9 +346,9 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Editado el</span>
+                  <span class="post-meta-item-text">Bearbeitet am</span>
                 
-                <time title="Modificado por: 2019-07-30 09:45:16" itemprop="dateModified" datetime="2019-07-30T09:45:16+08:00">2019-07-30</time>
+                <time title="Geändert am: 2019-07-30 14:24:25" itemprop="dateModified" datetime="2019-07-30T14:24:25+08:00">2019-07-30</time>
               </span>
             
           
@@ -448,7 +448,7 @@
 <p>点进去之后可以看到parser.js文件，修改一下</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  onWillParseMarkdown: <span class="function"><span class="keyword">function</span>(<span class="params">markdown</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>)=&gt;</span> &#123;</span><br><span class="line">      markdown = markdown.replace(</span><br><span class="line">        /\&#123;%\s*asset_img\s*(.*)\s*%\&#125;/g,</span><br><span class="line">        <span class="function"><span class="keyword">function</span>(<span class="params">whole,content</span>)</span>&#123;</span><br><span class="line">          <span class="keyword">var</span> picFileName = whole.match(<span class="regexp">/(?&lt;=\&#123;%\s.+\s.+\s).*?(?=\s%)/</span>);<span class="comment">//图片文件夹（和文章名称一致）名称</span></span><br><span class="line">          <span class="keyword">var</span> picName = whole.match(<span class="regexp">/(?&lt;=\&#123;%\s.+\s).*?(?=\s.*\s%)/</span>);<span class="comment">//图片名称（也可以随便给个值，为空的话代码会有警告）</span></span><br><span class="line">          <span class="keyword">return</span> <span class="string">`![<span class="subst">$&#123;picName&#125;</span>](/source/_posts/<span class="subst">$&#123;picFileName&#125;</span>/<span class="subst">$&#123;picName&#125;</span>)`</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      )</span><br><span class="line">      <span class="keyword">return</span> resolve(markdown)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  onDidParseMarkdown: <span class="function"><span class="keyword">function</span>(<span class="params">html</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>)=&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> resolve(html)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image" target="_blank" rel="noopener">paste image 插件的配置文档链接</a></p>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image" target="_blank" rel="noopener">Paste Image 插件的配置文档链接</a></p>
 
       
     </div>
@@ -521,10 +521,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Tabla de contenidos
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Inicio
+            Übersicht
           </li>
         </ul>
       
@@ -546,7 +546,7 @@
           <a href="/archives/">
         
           <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">entradas</span>
+          <span class="site-state-item-name">Artikel</span>
         </a>
       </div>
     
@@ -617,7 +617,7 @@
 </div>
 
 
-  <div class="powered-by">Creado mediante <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
 
 
 
@@ -625,7 +625,7 @@
 
 
 
-  <div class="theme-info">Tema – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.2.0</div>
+  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.2.0</div>
 
 
 
