@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -88,33 +88,36 @@
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
     translation: {
-      copy_button: 'Kopieren',
-      copy_success: 'Kopiert',
-      copy_failure: 'Kopieren fehlgeschlagen'
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
     }
   };
 </script>
 
   <meta name="description" content="准备工作1.安装git、node.js2.在Github新建一个仓库，格式：账户名.github.io命名，在仓库的Settings里面GitHub Pages这一栏可以看到访问网址，可以点击下试着访问   3.如果自己有域名的话可以绑定一下，ping一下上面那个网址的ip地址，可以用A记录解析，指向ip地址，也可以用CNAME指向的是 账户名.github.io这个，绑定好域名之后在仓库里面添加">
+<meta name="keywords" content="jQuery,表格,表单验证">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第一篇博客，记录一下vscode+hexo的一些配置（坑）">
 <meta property="og:url" content="http://wawawaaw.top/2019/07/22/my-first-hexo-blog/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="准备工作1.安装git、node.js2.在Github新建一个仓库，格式：账户名.github.io命名，在仓库的Settings里面GitHub Pages这一栏可以看到访问网址，可以点击下试着访问   3.如果自己有域名的话可以绑定一下，ping一下上面那个网址的ip地址，可以用A记录解析，指向ip地址，也可以用CNAME指向的是 账户名.github.io这个，绑定好域名之后在仓库里面添加">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://wawawaaw.top/2019/07/22/my-first-hexo-blog/2019-07-25-11-05-26.png">
 <meta property="og:image" content="http://wawawaaw.top/2019/07/22/my-first-hexo-blog/2019-07-25-15-09-41.png">
 <meta property="og:image" content="http://wawawaaw.top/2019/07/22/my-first-hexo-blog/2019-07-26-11-59-26.png">
 <meta property="og:image" content="http://wawawaaw.top/2019/07/22/my-first-hexo-blog/2019-07-29-14-29-42.png">
 <meta property="og:image" content="http://wawawaaw.top/2019/07/22/my-first-hexo-blog/2019-07-26-17-11-47.png">
 <meta property="og:image" content="http://wawawaaw.top/2019/07/22/my-first-hexo-blog/2019-07-29-14-05-33.png">
-<meta property="og:updated_time" content="2019-07-30T08:55:32.753Z">
+<meta property="og:updated_time" content="2019-07-31T07:00:04.290Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第一篇博客，记录一下vscode+hexo的一些配置（坑）">
 <meta name="twitter:description" content="准备工作1.安装git、node.js2.在Github新建一个仓库，格式：账户名.github.io命名，在仓库的Settings里面GitHub Pages这一栏可以看到访问网址，可以点击下试着访问   3.如果自己有域名的话可以绑定一下，ping一下上面那个网址的ip地址，可以用A记录解析，指向ip地址，也可以用CNAME指向的是 账户名.github.io这个，绑定好域名之后在仓库里面添加">
 <meta name="twitter:image" content="http://wawawaaw.top/2019/07/22/my-first-hexo-blog/2019-07-25-11-05-26.png">
 
 
+
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
 
 
 
@@ -172,7 +175,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -199,7 +202,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Navigationsleiste an/ausschalten">
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -226,7 +229,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Startseite</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
 
   </li>
         
@@ -242,7 +245,7 @@
 
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>Über</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
 
   </li>
         
@@ -258,7 +261,7 @@
 
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Schlagwörter</a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
 
   </li>
         
@@ -274,7 +277,7 @@
 
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Kategorien</a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
 
   </li>
         
@@ -290,7 +293,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archiv</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
 
   </li>
         
@@ -390,14 +393,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">发表于</span>
               
 
               
                 
               
 
-              <time title="Erstellt: 2019-07-22 17:04:19" itemprop="dateCreated datePublished" datetime="2019-07-22T17:04:19+08:00">2019-07-22</time>
+              <time title="创建时间：2019-07-22 17:04:19" itemprop="dateCreated datePublished" datetime="2019-07-22T17:04:19+08:00">2019-07-22</time>
             </span>
           
 
@@ -410,13 +413,28 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Bearbeitet am</span>
+                  <span class="post-meta-item-text">更新于</span>
                 
-                <time title="Geändert am: 2019-07-30 16:55:32" itemprop="dateModified" datetime="2019-07-30T16:55:32+08:00">2019-07-30</time>
+                <time title="修改时间：2019-07-31 15:00:04" itemprop="dateModified" datetime="2019-07-31T15:00:04+08:00">2019-07-31</time>
               </span>
             
           
 
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/web前端/" itemprop="url" rel="index"><span itemprop="name">web前端</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -513,6 +531,7 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  onWillParseMarkdown: <span class="function"><span class="keyword">function</span>(<span class="params">markdown</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>)=&gt;</span> &#123;</span><br><span class="line">      markdown = markdown.replace(</span><br><span class="line">        /\&#123;%\s*asset_img\s*(.*)\s*%\&#125;/g,</span><br><span class="line">        <span class="function"><span class="keyword">function</span>(<span class="params">whole,content</span>)</span>&#123;</span><br><span class="line">          <span class="keyword">var</span> picFileName = whole.match(<span class="regexp">/(?&lt;=\&#123;%\s.+\s.+\s).*?(?=\s%)/</span>);<span class="comment">//图片文件夹（和文章名称一致）名称</span></span><br><span class="line">          <span class="keyword">var</span> picName = whole.match(<span class="regexp">/(?&lt;=\&#123;%\s.+\s).*?(?=\s.*\s%)/</span>);<span class="comment">//图片名称（也可以随便给个值，为空的话代码会有警告）</span></span><br><span class="line">          <span class="keyword">return</span> <span class="string">`![<span class="subst">$&#123;picName&#125;</span>](/source/_posts/<span class="subst">$&#123;picFileName&#125;</span>/<span class="subst">$&#123;picName&#125;</span>)`</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      )</span><br><span class="line">      <span class="keyword">return</span> resolve(markdown)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  onDidParseMarkdown: <span class="function"><span class="keyword">function</span>(<span class="params">html</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>)=&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> resolve(html)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image" target="_blank" rel="noopener">Paste Image 插件的配置文档链接</a></p>
+<p><a href="https://www.jianshu.com/p/9f0e90cc32c2" target="_blank" rel="noopener">hexo 界面优化</a></p>
 
       
     </div>
@@ -537,6 +556,19 @@
     
 
     <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/jQuery/" rel="tag"># jQuery</a>
+          
+            <a href="/tags/表格/" rel="tag"># 表格</a>
+          
+            <a href="/tags/表单验证/" rel="tag"># 表单验证</a>
+          
+        </div>
       
 
       
@@ -585,10 +617,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Inhaltsverzeichnis
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Übersicht
+            站点概览
           </li>
         </ul>
       
@@ -612,17 +644,61 @@
           <a href="/archives/">
         
           <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">Artikel</span>
+          <span class="site-state-item-name">日志</span>
         </a>
       </div>
     
 
     
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        
+        
+          
+        
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
 
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
     
   </nav>
 
 
+
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
 
 
 
@@ -671,7 +747,8 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -682,17 +759,22 @@
   
 </div>
 
+ 
+  <!-- <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div> -->
 
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
 
 
-
+  <div class="powered-by">
+  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+    本站访客数:<span id="busuanzi_value_site_uv"></span>
+  </span>
+  </div>
   <span class="post-meta-divider">|</span>
 
 
 
-  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.2.0</div>
-
+  <!-- <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.2.0</div> -->
+ 
 
 
 
@@ -753,6 +835,12 @@
   
 
 
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
